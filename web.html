@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reaction Time</title>
+  <link rel="stylesheet" href="styling.css" />
+</head>
+<body>
+ 
+  <div class="container">
+ 
+    <header>
+      <h1>Reaction Time</h1>
+      <p class="tagline">Test your reaction time</p>
+    </header>
+ 
+    <div class="stats-bar">
+      <div class="stat">
+        <span class="stat-label">Last</span>
+        <span class="stat-value" id="stat-last">--</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Best</span>
+        <span class="stat-value" id="stat-best">--</span>
+      </div>
+      <div class="stat">
+        <span class="stat-label">Avg</span>
+        <span class="stat-value" id="stat-avg">--</span>
+      </div>
+    </div>
+ 
+    <div id="arena" class="state-idle">
+      <div id="arena-icon" class="arena-icon">⚡</div>
+      <div id="arena-msg" class="arena-msg">Click to start</div>
+      <div id="arena-sub" class="arena-sub">Round 1 of 5</div>
+    </div>
+ 
+    <div id="history-row" class="history-row"></div>
+ 
+    <button id="btn-reset" class="btn-reset" style="display:none">↺ Reset</button>
+ 
+  </div>
+ 
+  <script src="scripting.js"></script>
+</body>
+</html>
